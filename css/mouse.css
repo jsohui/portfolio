@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+/* -----------mouse------------------- */
+.mouse {
+    position: absolute;
+    z-index: 999;
+}
+.cursor {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 3px solid #B93658;
+    pointer-events: none;
+}
+.cursor2 {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: #D88CA6;
+    pointer-events: none;
+    transition: 0.04s ease-in-out;
+}
+.cursor3 {
+    position: fixed;
+    width: 5px;
+    height: 5px;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: #D24E73;
+    pointer-events: none;
+    transition: 0.05s ease-in-out;
+}
+.cursor4 {
+    position: fixed;
+    width: 5px;
+    height: 5px;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: #B93658;
+    pointer-events: none;
+    transition: 0.06s ease-in-out;
+}
+.cursor.on {
+    display: block;
+    width: 80px;
+    height: 80px;
+    opacity: 0.5;
+    background: #B93658;
+    backdrop-filter: blur(10px);
+    transition: all 0.2s ease-out;
+    border: 0;
+}
+.cursor2.on, .cursor3.on, .cursor4.on{
+    opacity: 0;
+    transition: all 0.2s ease-out;
+}
